@@ -9,7 +9,6 @@ const imagens = [
 ]
 
 const mensagens = [
-    "Desde que te conheci, minha vida ficou mais doce.",
     "Você é minha inspiração diária. 💗",
     "Nosso amor é a melhor história que já vivi.",
     "Ao seu lado, todos os dias são especiais.",
@@ -40,14 +39,12 @@ export default function Principal() {
                             animationDelay: `${Math.random() * 5}s`,
                             fontSize: `${Math.random() * 20 + 12}px`,
                         }}
-                    >
-      ❤️
-    </span>
+                    > ❤️ </span>
                 ))}
             </div>
 
             <div className="w-full max-w-2xl flex flex-col items-center">
-                <h1 className="text-3xl sm:text-4xl font-bold text-pink-600 mb-2 text-center">
+                <h1 className="text-2xl sm:text-4xl font-bold text-pink-600 mb-2 text-center">
                     Feliz Dia dos Namorados! 💖
                 </h1>
                 <p className="text-lg sm:text-xl text-pink-500 mb-6 text-center">
@@ -59,7 +56,7 @@ export default function Principal() {
                     {...swipeHandlers}
                     className="relative w-full max-w-sm sm:max-w-md mb-4 overflow-hidden"
                 >
-                    <div className="relative w-full h-64">
+                    <div className="relative w-full h-104">
                         {imagens.map((img, i) => (
                             <img
                                 key={i}
@@ -106,7 +103,7 @@ export default function Principal() {
 
             {/* Rodapé */}
             <footer className="mt-8 text-sm text-center text-rose-400">
-                Feito com 💕 por Rafael – 2025
+                Feito com 💕 por Rafael Konscca – 2025
             </footer>
         </div>
     )
