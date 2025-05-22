@@ -1,6 +1,6 @@
 'use client'
-import { useState } from 'react'
-import { useSwipeable } from 'react-swipeable'
+import {useState} from 'react'
+import {useSwipeable} from 'react-swipeable'
 
 const imagens = [
     '/img1.jpg',
@@ -99,6 +99,11 @@ export default function Principal() {
                 </div>
             </div>
 
+            <audio autoPlay loop hidden>
+                <source src="/musica.mp3" type="audio/mpeg"/>
+                Seu navegador não suporta áudio.
+            </audio>
+            
             {/* Rodapé */}
             <footer className="mt-8 text-sm text-center text-rose-400">
                 Feito com 💕 por Rafael – 2025
