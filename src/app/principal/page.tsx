@@ -62,7 +62,7 @@ export default function Principal() {
                             animationDelay: `${Math.random() * 5}s`,
                             fontSize: `${Math.random() * 20 + 12}px`,
                         }}
-                    > ❤️ </span>
+                    > 💜 </span>
                 ))}
             </div>
 
@@ -79,7 +79,7 @@ export default function Principal() {
                 />
 
                 {/* Título e introdução */}
-                <h1 className="text-2xl sm:text-4xl font-bold text-white mt-6 text-center">
+                <h1 className="text-2xl sm:text-4xl font-bold text-rose-200 mt-6 text-center">
                     Feliz Dia dos Namorados! 💖
                 </h1>
                 <p className="text-lg sm:text-xl text-white mb-6 text-center">
