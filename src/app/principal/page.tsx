@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
 
 const imagens = [
-    '/img1.jpg',
-    '/img2.jpg',
-    '/img3.jpg',
+    '/images.jpeg',
+    '/images.jpeg',
+    '/images.jpeg',
 ]
 
 const mensagens = [
