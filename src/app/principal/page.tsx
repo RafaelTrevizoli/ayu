@@ -4,8 +4,8 @@ import { useSwipeable } from 'react-swipeable'
 
 const imagens = [
     '/img1.jpg',
-    '/img2.jpg',
-    '/img3.jpg',
+    '/img1.jpg',
+    '/img1.jpg',
 ]
 
 const mensagens = [
@@ -25,7 +25,7 @@ export default function Principal() {
         onSwipedLeft: next,
         onSwipedRight: prev,
         preventScrollOnSwipe: true,
-        trackMouse: true, // permite usar também com o mouse no desktop
+        trackMouse: true,
     })
 
     return (
@@ -41,13 +41,33 @@ export default function Principal() {
                 {/* Carrossel com swipe */}
                 <div
                     {...swipeHandlers}
-                    className="relative w-full max-w-sm sm:max-w-md mb-6"
+                    className="relative w-full max-w-sm sm:max-w-md mb-4 overflow-hidden"
                 >
-                    <img
-                        src={imagens[index]}
-                        alt="Foto especial"
-                        className="rounded-xl w-full h-64 object-cover shadow-lg transition-all duration-300"
-                    />
+                    <div className="relative w-full h-64">
+                        {imagens.map((img, i) => (
+                            <img
+                                key={i}
+                                src={img}
+                                alt={`Foto ${i + 1}`}
+                                className={`
+                  absolute top-0 left-0 w-full h-full object-cover rounded-xl shadow-lg transition-all duration-700
+                  ${i === index ? 'opacity-100 scale-100 z-10' : 'opacity-0 scale-95 z-0'}
+                `}
+                            />
+                        ))}
+                    </div>
+
+                    {/* Indicadores */}
+                    <div className="flex justify-center mt-4 space-x-2">
+                        {imagens.map((_, i) => (
+                            <span
+                                key={i}
+                                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                                    i === index ? 'bg-pink-600' : 'bg-pink-300'
+                                }`}
+                            />
+                        ))}
+                    </div>
                 </div>
 
                 {/* Mensagens */}
