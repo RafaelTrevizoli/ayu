@@ -4,8 +4,8 @@ import {useSwipeable} from 'react-swipeable'
 
 const imagens = [
     '/img1.jpg',
-    '/img1.jpg',
-    '/img1.jpg',
+    '/img2.jpg',
+    '/img3.jpg',
 ]
 
 const mensagens = [
@@ -103,7 +103,7 @@ export default function Principal() {
                 <source src="/musica.mp3" type="audio/mpeg"/>
                 Seu navegador não suporta áudio.
             </audio>
-            
+
             {/* Rodapé */}
             <footer className="mt-8 text-sm text-center text-rose-400">
                 Feito com 💕 por Rafael – 2025
