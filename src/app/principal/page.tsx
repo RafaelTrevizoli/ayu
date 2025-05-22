@@ -100,7 +100,7 @@ export default function Principal() {
             </div>
 
             <audio autoPlay loop hidden>
-                <source src="/musica.mp3" type="audio/mpeg"/>
+                <source src="/music.mp3" type="audio/mpeg"/>
                 Seu navegador não suporta áudio.
             </audio>
 
