@@ -30,6 +30,22 @@ export default function Principal() {
 
     return (
         <div className="min-h-screen bg-rose-50 flex flex-col items-center justify-between px-4 py-8">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+                {[...Array(20)].map((_, i) => (
+                    <span
+                        key={i}
+                        className="absolute text-pink-300 animate-floating"
+                        style={{
+                            left: `${Math.random() * 100}%`,
+                            animationDelay: `${Math.random() * 5}s`,
+                            fontSize: `${Math.random() * 20 + 12}px`,
+                        }}
+                    >
+      ❤️
+    </span>
+                ))}
+            </div>
+
             <div className="w-full max-w-2xl flex flex-col items-center">
                 <h1 className="text-3xl sm:text-4xl font-bold text-pink-600 mb-2 text-center">
                     Feliz Dia dos Namorados! 💖
