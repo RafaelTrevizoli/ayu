@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
 
 const imagens = [
-    '/images.jpeg',
-    '/images.jpeg',
-    '/images.jpeg',
+    '/img1.jpeg',
+    '/img2.jpeg',
+    '/img3.jpeg',
 ]
 
 const mensagens = [
@@ -16,7 +16,7 @@ export default function Principal() {
     const [index, setIndex] = useState(0)
     const [duracao, setDuracao] = useState('')
 
-    const inicioRelacao = new Date('2024-02-18T14:30:00') // Ajuste conforme necessário
+    const inicioRelacao = new Date('2024-02-18T14:30:00') 
 
     const calcularDuracao = () => {
         const agora = new Date()
