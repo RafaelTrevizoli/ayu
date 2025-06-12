@@ -3,20 +3,26 @@ import { useState, useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
 
 const imagens = [
-    '/img1.jpg',
-    '/img2.jpg',
-    '/img3.jpg',
+    '/img1.jpeg',
+    '/img2.jpeg',
+    '/img3.jpeg',
+    '/img4.jpeg',
+    '/img5.jpeg',
 ]
 
 const mensagens = [
-    "Você é a razão do meu sorriso todos os dias. Cada a momento ao seu lado é um presente, e eu não consigo imaginar a vida sem você. Seu carinho, sua luz, sua energia tornam tudo mais bonito e seu sou imensamente grato por te ter. Eu te amo!",
+    "Meu amor, quero que você saiba o quanto eu te amo. Cada momento que passo ao seu lado é especial e inesquecível.\n" +
+    "Seu sorriso ilumina meus dias e sua presença me traz uma paz que nunca senti antes.\n" +
+    "Você é a razão pela qual eu acordo todos os dias com um sorriso no rosto e a motivação que me faz querer ser uma pessoa melhor.\n" +
+    "Amo cada detalhe seu, desde o jeito que você ri até a forma como você me olha.\n" +
+    "Sua bondade, sua inteligência e sua beleza me encantam e me fazem te amar mais a cada dia que passa. Sou eternamente grato por ter você na minha vida e por poder compartilhar tantos momentos incríveis ao seu lado.",
 ]
 
 export default function Principal() {
     const [index, setIndex] = useState(0)
     const [duracao, setDuracao] = useState('')
 
-    const inicioRelacao = new Date('2024-02-18T14:30:00') 
+    const inicioRelacao = new Date('2020-04-04T14:30:00')
 
     const calcularDuracao = () => {
         const agora = new Date()
@@ -70,7 +76,7 @@ export default function Principal() {
                 {/* Spotify Embed */}
                 <iframe
                     style={{ borderRadius: '12px' }}
-                    src="https://open.spotify.com/embed/track/44pllb9f5QwcrD2kKc0gS0?utm_source=generator&theme=0"
+                    src="https://open.spotify.com/embed/track/2plbrEY59IikOBgBGLjaoe?utm_source=generator"
                     width="100%"
                     height="300"
                     frameBorder="0"
@@ -140,12 +146,6 @@ export default function Principal() {
                     ))}
                 </div>
             </div>
-
-            {/* Música de fundo (opcional) */}
-            <audio autoPlay loop hidden>
-                <source src="" type="audio/mpeg" />
-                Seu navegador não suporta áudio.
-            </audio>
 
             {/* Rodapé */}
             <footer className="mt-8 text-sm text-center text-rose-200">
