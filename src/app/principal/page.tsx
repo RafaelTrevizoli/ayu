@@ -149,7 +149,7 @@ export default function Principal() {
 
             {/* Rodapé */}
             <footer className="mt-8 text-sm text-center text-rose-200">
-                Feito com 💕 por Rafael Konscca – 2025
+                Feito com 💕 por Gabriel Konscca – 2025
             </footer>
         </div>
     )
